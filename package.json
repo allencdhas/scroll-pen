@@ -1,0 +1,20 @@
+{
+  "name": "punishment-wallet",
+  "version": "1.0.0",
+  "description": "Terminal-based discipline system that enforces financial penalties via on-chain automation when you spend too long on distracting sites.",
+  "type": "module",
+  "bin": {
+    "punishment-wallet": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "dev": "node src/cli.js --limit 1 --penalty 0.001"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
